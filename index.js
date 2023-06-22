@@ -14,14 +14,14 @@ function mindGame(number){
 // Problem - 2
 // ------------------
 
-function evenOdd(string) {
-    let string = 0
-    if (string.i.length() % 2 === 0) {
-        return even       
+function evenOdd(input) {
+    if (input.length % 2 === 0) {
+      return "even";
+    } else {
+      return "odd";
     }
-    else(string.i.length() % 2 != 0)
-        return odd
-}
+  }
+  
 // ---------------
 // Problem - 3
 // ---------------
@@ -50,16 +50,15 @@ function findingBadData(data){
 // problem - 5
 // ---------------
 
-function  gemsToDiamond(firstFriendgem, secondFriendgem, thirdFriendgem){
-    const firstgemability = firstFriendgem * 21
-    const secondgemability = secondFriendgem * 32
-    const thirdgemability = thirdFriendgem * 43
-    const totalgemability = firstgemability + secondgemability + thirdgemability
-    if(totalgemability > 2000){
-        return totalgemability - 2000
+function  gemsToDiamond(firstFriendGem, secondFriendGem, thirdFriendGem){
+    const firstGemAbility = firstFriendGem * 21
+    const secondGemAbility = secondFriendGem * 32
+    const thirdGemAbility = thirdFriendGem * 43
+    const totalGemAbility = firstGemAbility + secondGemAbility + thirdGemAbility
+    if(totalGemAbility > 2000){
+        return totalGemAbility - 2000
     }
     else{
-        return totalgemability
+        return totalGemAbility
     }
 }
-const diamond = gemsToDiamond(firstFriendgem, secondFriendgem, thirdFriendgem)
